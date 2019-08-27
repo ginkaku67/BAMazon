@@ -14,48 +14,25 @@ var connection = mysql.createConnection({
       console.log(result);
     });
   });
-  /*connection.connect(function(err) {
-    if (err) throw err;
-    /*runSearch/displayProducts();
-  });
-  function displayProducts()
 
-  
-  function runSearch() {
-    inquirer
-      .prompt({
-        name: "action",
-        type: "list",
-        message: "What would you like to do?",
-        choices: [
-          "Find songs by artist",
-          "Find all artists who appear more than once",
-          "Find data within a specific range",
-          "Search for a specific song",
-          "exit"
-        ]
-      })
-      .then(function(answer) {
-        switch (answer.action) {
-        case "Find songs by artist":
-          artistSearch();
-          break;
-  
-        case "Find all artists who appear more than once":
-          multiSearch();
-          break;
-  
-        case "Find data within a specific range":
-          rangeSearch();
-          break;
-  
-        case "Search for a specific song":
-          songSearch();
-          break;
-  
-        case "exit":
-          connection.end();
-          break;
-        }
-      });*/
-  
+  //ask for id of product they want to buy
+/*Currently looking for the prompt bit of code in old activities, but this prompt would be requesting that they input the id number of the product they want*/
+  //ask how many they want to buy
+ console.log("Yo, how many do you want to buy?");
+  var numberRequested = 
+
+  //make if/else to see if we have enough product
+if (numberRequested <= stock_quantity) {
+  var sellable = stock_quantity - numberRequested;
+};
+else (numberRequested > stock_quantity) {
+  var rejectTheirOffer
+  //how would I coonect that?
+}
+  connection.query("UPDATE * FROM product", function (err, result) {
+    if () throw err;
+    console.log(newSum + " left in stock");
+};
+else (){
+  console.log("No capitalism for you! You are asking too much of me.")
+};
